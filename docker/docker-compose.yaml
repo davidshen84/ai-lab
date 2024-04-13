@@ -3,6 +3,8 @@ services:
     build:
       context: .
       dockerfile: tf-2.16.1-cuda-12.dockerfile
+      tags:
+        - ai-lab:latest
     ports:
       - 8888:8888
       - 6006:6006
