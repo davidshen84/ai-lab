@@ -1,5 +1,5 @@
 services:
-  notebooks:
+  lab:
     build:
       context: .
       dockerfile: tf-2.16.1-cuda-12.dockerfile
