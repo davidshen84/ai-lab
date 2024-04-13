@@ -1,0 +1,31 @@
+services:
+  notebooks:
+    build:
+      context: .
+      dockerfile: tf-2.16.1-cuda-12.dockerfile
+    ports:
+      - 8888:8888
+      - 6006:6006
+    volumes:
+      - ../notebooks:/tf/notebooks
+      - keras:/root/.keras
+      - tfhub:/root/.cache/tfhub_modules
+      - tfds:/root/tensorflow_datasets
+      - jupyter:/root/.jupyter
+    environment:
+      - TF_GPU_ALLOCATOR=cuda_malloc_async
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities:
+                - gpu
+    restart: "unless-stopped"
+
+volumes:
+  keras:
+  tfhub:
+  tfds:
+  jupyter:

@@ -1,0 +1,15 @@
+black
+clu
+flax
+isort
+jax[cuda11_local]
+jupyter_contrib_nbextensions
+jupyterlab
+jupyterlab-code-formatter
+# pymongo
+# scikit-learn
+tensorflow_datasets
+tensorflow_hub
+tensorflow_text
+whoosh
+yapf
