@@ -10,9 +10,12 @@ An AI notebook based on jupyter lab.
 
 # docker
 
-1. Edit the `volumes` section according to your host file system.  If
-your docker engine does not have access to a GPU, please remove the
-`resources.reservations` section.
+1. Edit the `volumes` section according to your host file system.
+ - If your docker engine does not have access to a GPU, please remove
+   the `resources.reservations` section.
+ - Port 8888 is for the jupyter lab web UI.
+ - Port 6006-6009 is for tensorboard web UI. You can adjust and
+   increase the range if you need more tensorboard instances.
 
 2. Start the container
 

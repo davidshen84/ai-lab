@@ -7,9 +7,9 @@ services:
         - ai-lab:latest
     ports:
       - 8888:8888
-      - 6006:6006
+      - 6006-6009:6006-6009
     volumes:
-      - ../notebooks:/tf/notebooks
+      - ../notebooks:/notebooks
       - keras:/root/.keras
       - tfhub:/root/.cache/tfhub_modules
       - tfds:/root/tensorflow_datasets
