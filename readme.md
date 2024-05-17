@@ -38,4 +38,4 @@ docker compose down
 ```
 
 **Note**: if you did not map your host directory to the containers
-correctly, you may lose you notebooks.
+correctly, you may lose your notebooks.

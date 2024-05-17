@@ -1,15 +1,15 @@
+# pymongo
+# scikit-learn
+# whoosh
 black
 clu
 flax
 isort
-jax[cuda12_local]
+jax[cuda12]
 jupyter_contrib_nbextensions
 jupyterlab
 jupyterlab-code-formatter
-# pymongo
-# scikit-learn
 tensorflow_datasets
 tensorflow_hub
 tensorflow_text
-whoosh
 yapf
