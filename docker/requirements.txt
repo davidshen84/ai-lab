@@ -1,14 +1,13 @@
-# pymongo
 # scikit-learn
-# whoosh
 black
 clu
+datasets
 flax
 isort
 jax[cuda12]
-jupyter_contrib_nbextensions
 jupyterlab
 jupyterlab-code-formatter
+jupyterlab-lsp
 tensorflow_datasets
 tensorflow_hub
 tensorflow_text
