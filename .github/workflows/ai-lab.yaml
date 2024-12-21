@@ -1,3 +1,4 @@
+# disabled due to large image size
 name: Build and Push ai-lab Image
 
 on:
