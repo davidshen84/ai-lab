@@ -1,0 +1,14 @@
+# scikit-learn
+black
+clu
+datasets
+flax
+isort
+jax[cuda12_local]
+jupyterlab
+jupyterlab-code-formatter
+jupyterlab-lsp
+tensorflow_datasets
+tensorflow_hub
+tensorflow_text
+yapf

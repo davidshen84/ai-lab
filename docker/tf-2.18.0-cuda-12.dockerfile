@@ -4,7 +4,7 @@ run apt update && \
     apt install -y zsh zsh-autosuggestions zsh-syntax-highlighting
 run sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-copy requirements.txt .
+copy requirements-2.18.txt requirements.txt
 run pip install --upgrade pip
 run --mount=type=cache,target=/root/.cache/pip \
     pip install --upgrade --requirement requirements.txt

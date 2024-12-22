@@ -4,9 +4,10 @@ services:
       context: .
       dockerfile: tf-2.18.0-cuda-12.dockerfile
       tags:
-        - ai-lab:latest
+        - ai-lab:latest-local
     ports:
       - 8888:8888
+      - 6006:6006
     volumes:
       - ../notebooks:/notebooks
       - keras:/root/.keras
